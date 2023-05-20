@@ -1,11 +1,11 @@
 package com.example.demo.beans;
 
 public class Determinant {
-    public double calculateDeterminant(double[][] A){
+    public double calculateDeterminantRecursively(double[][] A){
         double sum = 0;
         if (A.length==1){return A[0][0];}
         for(int i = 0; i < A[0].length; i++){
-            sum += Math.pow(-1,i)*A[0][i]*calculateDeterminant(modifiedMatrix(A,i));
+            sum += Math.pow(-1,i)*A[0][i]*calculateDeterminantRecursively(modifiedMatrix(A,i));
         }
         return sum;
     }
@@ -23,5 +23,12 @@ public class Determinant {
             newA[i-1] = row;
         }
         return newA;
+    }
+    public double calculateDeterminant(double[][] A){
+        double det = 1;
+        for(int i=0; i<A.length; i++){
+            det*=A[i][i];
+        }
+        return det;
     }
 }
