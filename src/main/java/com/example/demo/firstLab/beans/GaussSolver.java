@@ -1,6 +1,6 @@
-package com.example.demo.beans;
+package com.example.demo.firstLab.beans;
 
-import com.example.demo.utils.Matrix;
+import com.example.demo.firstLab.utils.Matrix;
 
 public class GaussSolver {
     public Matrix forwardSubstitution(Matrix matrix){

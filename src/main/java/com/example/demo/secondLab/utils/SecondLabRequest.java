@@ -1,2 +1,4 @@
-package com.example.demo.secondLab.utils;public record SecondLabRequest() {
+package com.example.demo.secondLab.utils;
+
+public record SecondLabRequest(int n) {
 }

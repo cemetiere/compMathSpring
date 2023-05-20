@@ -1,2 +1,4 @@
-package com.example.demo.thirdLab.exceptions;public class IntegralDoesNotExist {
+package com.example.demo.thirdLab.exceptions;
+
+public class IntegralDoesNotExist extends Exception{
 }

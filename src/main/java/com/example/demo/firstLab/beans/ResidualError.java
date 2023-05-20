@@ -1,6 +1,6 @@
-package com.example.demo.beans;
+package com.example.demo.firstLab.beans;
 
-import com.example.demo.utils.Matrix;
+import com.example.demo.firstLab.utils.Matrix;
 
 public class ResidualError {
     public double[] calculateResidualError(Matrix matrix, double[] answer){

@@ -1,4 +1,4 @@
-package com.example.demo.beans;
+package com.example.demo.firstLab.beans;
 
 public class Determinant {
     public double calculateDeterminantRecursively(double[][] A){
